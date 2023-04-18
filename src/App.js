@@ -1,7 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
-import NewsGrourComponent from './Body/NewsGroup';
-import HeaderComponent from './Body/Header';
+import NewsGrourComponent from './Body';
+import HeaderComponent from './Header/Index';
+import PaginationComponent from './Footer';
 
 
 
@@ -10,6 +11,7 @@ function App() {
     <Container>
       <HeaderComponent/>
       <NewsGrourComponent />
+      <PaginationComponent/>
     </Container>
   );
 }

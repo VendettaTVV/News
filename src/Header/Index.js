@@ -1,6 +1,7 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import logo from '../logo.svg';
+
 function HeaderComponent() {
     return (
         <Navbar bg="light" className='mb-5'>
@@ -13,7 +14,7 @@ function HeaderComponent() {
                         height="30"
                         className="d-inline-block align-top"
                     />{' '}
-                    React Bootstrap
+                    News
                 </Navbar.Brand>
             </Container>
         </Navbar>
