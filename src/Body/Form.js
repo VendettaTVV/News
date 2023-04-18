@@ -11,6 +11,9 @@ function FormComponent({ show, handleClose }) {
         { label: 'French', code: 'fr' },
         { label: 'Spanish', code: 'es' },
     ];
+    function ToCapitalaze (str) {
+        return str[0].toUpperCase() + str.substring(1);
+    }
     return (
         <Offcanvas show={show} onHide={handleClose}>
             <Offcanvas.Header closeButton>
@@ -28,7 +31,7 @@ function FormComponent({ show, handleClose }) {
                     {['title', 'description', 'content'].map((type) => (
                         <div key={`${type}`} className="mb-3">
                             <Form.Check
-                                label={type}
+                                label={ToCapitalaze(type)}
                                 name="searchIn"
                                 type='checkbox'
                                 id={`inline-${type}-1`}
