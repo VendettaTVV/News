@@ -11,19 +11,20 @@ function NewsModalComponent(props) {
         <>
             <Modal size="lg" show={props.show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
+                    <Modal.Title>{props.article.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Figure>
                         <Figure.Image
-                            alt=""
-                            src={noImage}
+                            alt="picture"
+                            src={props.article.urlToImage || noImage}
                         />
                         <Figure.Caption>
-                            URL
+                            {props.article.url}
                         </Figure.Caption>
-                    </Figure>
-                    <p>Content</p>
+                    </Figure >
+                    <p dangerouslySetInnerHTML={{ __html: props.article.content }}> 
+                    </p>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
