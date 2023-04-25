@@ -4,7 +4,7 @@ import Modal from 'react-bootstrap/Modal';
 import Figure from 'react-bootstrap/Figure';
 import noImage from '../dummy-post-horisontal.jpg';
 
-function NewsModalComponent({show, setShow, article}) {
+function NewsModalComponent({ show, setShow, article }) {
     const handleClose = () => setShow(false);
 
     return (
@@ -19,15 +19,15 @@ function NewsModalComponent({show, setShow, article}) {
                             alt="picture"
                             src={article.urlToImage || noImage}
                         />
-                        <Figure.Caption>
-                            {article.url}
-                        </Figure.Caption>
                     </Figure >
-                    <p dangerouslySetInnerHTML={{ __html: article.content }}> 
+                    <p dangerouslySetInnerHTML={{ __html: article.content }}>
                     </p>
+                    <Button variant='outline-secondary' href={article.url} className='w-100' target='_blank'>
+                        Read more
+                    </Button>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button variant="secondary" className='w-100' onClick={handleClose}>
                         Close
                     </Button>
                 </Modal.Footer>
