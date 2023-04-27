@@ -5,12 +5,12 @@ import Button from 'react-bootstrap/Button';
 import NewsCardComponent from './NewsCard';
 import FormComponent from './Form';
 import { getEverithing } from '../services/apiServices';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setErrorMessage } from '../services/stateService';
 import './News.scss';
 
 
-function NewsGrourComponent(props) {
+function NewsGrourComponent() {
     const [show, setShow] = useState(false);
     const [articles, setArticles] = useState([]);
 
@@ -18,11 +18,13 @@ function NewsGrourComponent(props) {
     const handleClose = () => setShow(false);
 
     const dispatch = useDispatch();
+    
+    const searchParams = useSelector((state) => state.searchParams);
 
     useEffect(() => {
         (async function () {
             try {
-                const response = await getEverithing(props);
+                const response = await getEverithing(searchParams);
                 const responseData = await response.json();
                 
                 if (responseData.status === "error") {
@@ -36,7 +38,7 @@ function NewsGrourComponent(props) {
             }
             
         })();
-    }, [props, dispatch]);
+    }, [searchParams, dispatch]);
 
 
     return (
@@ -55,7 +57,7 @@ function NewsGrourComponent(props) {
                 show={show}
                 handleClose={handleClose}
                 setArticles={setArticles}
-                searchProps={props}
+                searchProps={searchParams}
             />
         </>
     );
