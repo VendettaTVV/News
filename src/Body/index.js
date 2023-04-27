@@ -6,7 +6,7 @@ import NewsCardComponent from './NewsCard';
 import FormComponent from './Form';
 import { getEverithing } from '../services/apiServices';
 import { useDispatch, useSelector } from 'react-redux';
-import { setErrorMessage } from '../services/stateService';
+import { setErrorMessage, setTotalResults } from '../services/stateService';
 import './News.scss';
 
 
@@ -18,7 +18,7 @@ function NewsGrourComponent() {
     const handleClose = () => setShow(false);
 
     const dispatch = useDispatch();
-    
+
     const searchParams = useSelector((state) => state.searchParams);
 
     useEffect(() => {
@@ -26,17 +26,17 @@ function NewsGrourComponent() {
             try {
                 const response = await getEverithing(searchParams);
                 const responseData = await response.json();
-                
+
                 if (responseData.status === "error") {
                     throw responseData;
-                    
+
                 }
                 setArticles(responseData.articles);
-            
+                dispatch(setTotalResults(responseData.totalResults));
             } catch (error) {
                 dispatch(setErrorMessage(error.message));
             }
-            
+
         })();
     }, [searchParams, dispatch]);
 
