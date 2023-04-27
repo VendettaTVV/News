@@ -22,12 +22,12 @@ function NewsModalComponent({ show, setShow, article }) {
                     </Figure >
                     <p dangerouslySetInnerHTML={{ __html: article.content }}>
                     </p>
-                    <Button variant='outline-secondary' href={article.url} className='w-100' target='_blank'>
+                    <Button variant="outline-secondary" href={article.url} className="w-100" target="_blank">
                         Read more
                     </Button>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" className='w-100' onClick={handleClose}>
+                    <Button variant="secondary" className="w-100" onClick={handleClose}>
                         Close
                     </Button>
                 </Modal.Footer>

@@ -11,18 +11,18 @@ import 'react-datepicker/dist/react-datepicker.css';
 
 
 
-function FormComponent({ show, handleClose, setFormResponse, searchProps }) {
+function FormComponent({ show, handleClose, setArticles, searchProps }) {
 
     const [startDateFrom, setStartDateFrom] = useState(new Date());
     const [startDateTo, setStartDateTo] = useState(new Date());
     const dateFormat = "dd.MM.yyyy";
 
     const languages = [
-        { label: 'English', code: 'en' },
-        { label: 'Russian', code: 'ru' },
-        { label: 'Germany', code: 'de' },
-        { label: 'French', code: 'fr' },
-        { label: 'Spanish', code: 'es' },
+        { label: "English", code: "en" },
+        { label: "Russian", code: "ru" },
+        { label: "Germany", code: "de" },
+        { label: "French", code: "fr" },
+        { label: "Spanish", code: "es" },
     ];
     function ToCapitalaze(str) {
         return str[0].toUpperCase() + str.substring(1);
@@ -40,13 +40,13 @@ function FormComponent({ show, handleClose, setFormResponse, searchProps }) {
         };
 
         if (moment(data.from).isAfter(data.to)) {
-            alert('Wrong data from');
+            alert("Wrong data from");
             return;
         }
 
         const response = await getEverithing(data);
         const responseData = await response.json();
-        setFormResponse(responseData);
+        setArticles(responseData.articles);
 
     }
     return (
@@ -60,7 +60,7 @@ function FormComponent({ show, handleClose, setFormResponse, searchProps }) {
                         <Form.Label>Keywords</Form.Label>
                         <Form.Control 
                         type="text" 
-                        name='q' 
+                        name="q" 
                         placeholder="Enter keywords or phrases"
                         defaultValue={searchProps.q} 
                         />
@@ -68,7 +68,7 @@ function FormComponent({ show, handleClose, setFormResponse, searchProps }) {
                             Advanced search is supported here
                         </Form.Text>
                     </Form.Group>
-                    {['title', 'description', 'content'].map((type) => (
+                    {["title", "description", "content"].map((type) => (
                         <div key={`${type}`} className="mb-3">
                             <Form.Check
                                 label={ToCapitalaze(type)}
@@ -101,13 +101,13 @@ function FormComponent({ show, handleClose, setFormResponse, searchProps }) {
                     </Form.Group>
                     <Form.Group className="mb-3">
                         <Form.Label>Select language</Form.Label>
-                        <Form.Select name='language' defaultValue={searchProps.language}>
+                        <Form.Select name="language" defaultValue={searchProps.language}>
                             {languages.map((lang) => (
                                 <option key={lang.code} value={lang.code}>{lang.label}</option>
                             ))}
                         </Form.Select>
                     </Form.Group>
-                    <Button variant="primary" type="submit" className='w-100'>
+                    <Button variant="primary" type="submit" className="w-100">
                         Submit
                     </Button>
                 </Form>

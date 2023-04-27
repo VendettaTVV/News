@@ -4,34 +4,48 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import NewsCardComponent from './NewsCard';
 import FormComponent from './Form';
-import moment from 'moment';
 import { getEverithing } from '../services/apiServices';
+import { useDispatch } from 'react-redux';
+import { setErrorMessage } from '../services/stateService';
 import './News.scss';
 
 
 function NewsGrourComponent(props) {
     const [show, setShow] = useState(false);
-    const [formResponse, setFormResponse] = useState(null);
+    const [articles, setArticles] = useState([]);
 
     const handleShow = () => setShow(true);
     const handleClose = () => setShow(false);
 
+    const dispatch = useDispatch();
+
     useEffect(() => {
         (async function () {
-            const response = await getEverithing(props);
-            const responseData = await response.json();
-            setFormResponse(responseData);
+            try {
+                const response = await getEverithing(props);
+                const responseData = await response.json();
+                
+                if (responseData.status === "error") {
+                    throw responseData;
+                    
+                }
+                setArticles(responseData.articles);
+            
+            } catch (error) {
+                dispatch(setErrorMessage(error.message));
+            }
+            
         })();
-    }, []);
+    }, [props, dispatch]);
 
 
     return (
         <>
-            <Button variant="outline-primary" onClick={handleShow} className='mb-3'>
-                Search
+            <Button variant="outline-primary" onClick={handleShow} className="mb-3 mt-0">
+                Search news
             </Button>
             <Row xs={1} md={2} lg={3} className="g-2">
-                {formResponse?.articles.map((article, idx) => (
+                {articles.map((article, idx) => (
                     <Col key={idx}>
                         <NewsCardComponent article={article} />
                     </Col>
@@ -40,22 +54,14 @@ function NewsGrourComponent(props) {
             <FormComponent
                 show={show}
                 handleClose={handleClose}
-                setFormResponse={setFormResponse}
+                setArticles={setArticles}
                 searchProps={props}
             />
         </>
     );
 }
 
-NewsGrourComponent.defaultProps = {
-    q: 'ukraine',
-    from: moment().format("YYYY-MM-DDT00:00:00.000"),
-    to: moment().format("YYYY-MM-DDT23:59:59.999"),
-    language: 'en',
-    searchIn: 'title,description',
-    pageSize: 12,
-    page: 1,
-}
+
 
 
 export default NewsGrourComponent;

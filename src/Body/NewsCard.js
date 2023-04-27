@@ -8,7 +8,7 @@ function NewsCardComponent({ article }) {
     const [show, setShow] = useState(false);
     return (
         <>
-            <Card onClick={() => setShow(true)}>
+            <Card onClick={() => setShow(true)} className="h-100">
                 <Card.Img variant="top" src={article.urlToImage || noImage} />
                 <Card.Body>
                     <Card.Title>{article.title}</Card.Title>
@@ -25,7 +25,7 @@ function NewsCardComponent({ article }) {
                     ) : ''}
                 </Card.Body>
                 <Card.Footer>
-                    <small className="text-muted">{moment(article.publishedAt).format('DD.MM.YYYY')}</small>
+                    <small className="text-muted">{moment(article.publishedAt).format("DD.MM.YYYY")}</small>
                 </Card.Footer>
             </Card>
             <NewsModalComponent show={show} setShow={setShow} article={article} />
