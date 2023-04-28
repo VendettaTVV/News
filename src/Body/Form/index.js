@@ -5,15 +5,14 @@ import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
-import { getEverithing } from '../../services/apiServices';
-import { setPage } from '../../services/stateService';
+import { setErrorMessage, setSearchParams } from '../../services/stateService';
 import { useSelector, useDispatch } from 'react-redux';
 import 'react-datepicker/dist/react-datepicker.css';
 
 
 
 
-function FormComponent({ show, handleClose, setArticles, searchProps }) {
+function FormComponent({ show, handleClose, searchProps }) {
 
     const [startDateFrom, setStartDateFrom] = useState(new Date());
     const [startDateTo, setStartDateTo] = useState(new Date());
@@ -42,17 +41,15 @@ function FormComponent({ show, handleClose, setArticles, searchProps }) {
             language: event.target.language.value,
             searchIn: [...event.target.searchIn].filter(input => input.checked).map(input => input.value).join(','),
             pageSize,
+            page: 1
         };
 
         if (moment(data.from).isAfter(data.to)) {
-            alert("Wrong data from");
+           dispatch(setErrorMessage("Wrong data from"));
             return;
         }
 
-        const response = await getEverithing(data);
-        const responseData = await response.json();
-        setArticles(responseData.articles);
-        dispatch(setPage(1));
+        dispatch(setSearchParams(data));
         handleClose();
 
     }

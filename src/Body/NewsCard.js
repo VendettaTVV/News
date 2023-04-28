@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Card from 'react-bootstrap/Card';
-import noImage from '../dummy-post-horisontal.jpg';
+import noImage from '../world_news.jpg';
 import NewsModalComponent from './NewsModal';
 import moment from 'moment';
 
@@ -9,7 +9,7 @@ function NewsCardComponent({ article }) {
     return (
         <>
             <Card onClick={() => setShow(true)} className="h-100">
-                <Card.Img variant="top" src={article.urlToImage || noImage} />
+                <Card.Img variant="top" src={article.urlToImage || noImage}/>
                 <Card.Body>
                     <Card.Title>{article.title}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">{article.source.name}</Card.Subtitle>
