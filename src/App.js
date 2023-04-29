@@ -5,6 +5,7 @@ import HeaderComponent from './Header/Index';
 import PaginationComponent from './Footer';
 import ErrorModalComponent from './ErrorModal';
 import ContactComponent from './Body/Contact';
+import ContactSchoolComponent from './Body/ContactsSchool';
 import { Route, Routes } from 'react-router-dom';
 
 
@@ -33,6 +34,7 @@ function App() {
             <PaginationComponent />
           </>
         } />
+        <Route path="/contact/school" element={<ContactSchoolComponent />} />
         <Route path='/contact' element={<ContactComponent />} />
       </Routes>
       <ErrorModalComponent />
