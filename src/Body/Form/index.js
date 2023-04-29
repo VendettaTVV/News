@@ -111,7 +111,7 @@ function FormComponent({ show, handleClose, searchProps }) {
                             ))}
                         </Form.Select>
                     </Form.Group>
-                    <Button variant="primary" type="submit" className="w-100">
+                    <Button variant="outline-secondary" type="submit" className="w-100">
                         Submit
                     </Button>
                 </Form>

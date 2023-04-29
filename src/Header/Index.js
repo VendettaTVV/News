@@ -1,12 +1,14 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import logo from '../logo.svg';
+import { Link } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
 
 function HeaderComponent() {
     return (
         <Navbar bg="light" className="mb-3">
             <Container>
-                <Navbar.Brand href="#home">
+                <Link to="/" className="navbar-brand">
                     <img
                         alt=""
                         src={logo}
@@ -15,7 +17,12 @@ function HeaderComponent() {
                         className="d-inline-block align-top"
                     />{' '}
                     News
-                </Navbar.Brand>
+                </Link > 
+                <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <Link to="/contact" className='nav-link'>Contact</Link>
+                    </Nav>
+                </Navbar.Collapse>
             </Container>
         </Navbar>
     );

@@ -6,7 +6,8 @@ import NewsCardComponent from './NewsCard';
 import FormComponent from './Form';
 import { getEverithing } from '../services/apiServices';
 import { useDispatch, useSelector } from 'react-redux';
-import { setErrorMessage, setTotalResults } from '../services/stateService';
+import { setErrorMessage, setSearchParams, setTotalResults } from '../services/stateService';
+import { Link, useParams } from 'react-router-dom';
 import './News.scss';
 
 
@@ -17,14 +18,26 @@ function NewsGrourComponent() {
     const handleShow = () => setShow(true);
     const handleClose = () => setShow(false);
 
+    const { q, lang } = useParams();
+
     const dispatch = useDispatch();
 
     const searchParams = useSelector((state) => state.searchParams);
 
     useEffect(() => {
+        if(lang && searchParams.language !== lang) {
+            dispatch(setSearchParams({
+                ...searchParams,
+                language: lang,
+            }));
+            return;
+        }
         (async function () {
             try {
-                const response = await getEverithing(searchParams);
+                const response = await getEverithing({
+                    ...searchParams,
+                    q: q || searchParams.q,
+                });
                 const responseData = await response.json();
 
                 if (responseData.status === "error") {
@@ -38,14 +51,15 @@ function NewsGrourComponent() {
             }
 
         })();
-    }, [searchParams, dispatch]);
+    }, [searchParams, dispatch, q, lang]);
 
 
     return (
         <>
-            <Button variant="outline-primary" onClick={handleShow} className="mb-3 mt-0">
+            <Button variant="light" onClick={handleShow} className="mb-3 mt-0">
                 Search news
             </Button>
+            <Link to="/bitcoin">Bitcoin</Link>
             <Row xs={1} md={2} lg={3} className="g-2">
                 {articles.map((article, idx) => (
                     <Col key={idx}>
