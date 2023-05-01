@@ -7,7 +7,7 @@ import CardFoto from '../CardFoto.jpg';
 function ContantComponent() {
     return (
         <>
-            <Link to="/contact/school" className="btn btn-secondary stretched-link">School Contacts</Link>
+            <Link to="/News/contact/school" className="btn btn-secondary stretched-link">School Contacts</Link>
             <Card className="position-absolute top-50 start-50 translate-middle mt-1" style={{ width: '25rem' }}>
                 <Card.Img variant="top" src={CardFoto} />
                 <Card.Body>

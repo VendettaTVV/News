@@ -1,0 +1,162 @@
+{
+    "status": "ok",
+    "totalResults": 60,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "Euronews"
+            },
+            "author": null,
+            "title": "Latest news bulletin | April 29th – Midday",
+            "description": "VIDEO : Catch up with the most important stories from around Europe and beyond - latest news, breaking news, World, Business, Entertainment, Politics, Culture, Travel.",
+            "url": "https://www.euronews.com/video/2023/04/29/latest-news-bulletin-april-29th-midday",
+            "urlToImage": "https://static.euronews.com/articles/stories/07/56/87/02/1000x563_screenshot_1200_15_7568702.jpg",
+            "publishedAt": "2023-04-29T10:00:02Z",
+            "content": "Catch up with the most important stories from around Europe and beyond - latest news, breaking news, World, Business, Entertainment, Politics, Culture, Travel.\r\n...More"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Euronews"
+            },
+            "author": null,
+            "title": "Latest news bulletin | April 29th – Morning",
+            "description": "VIDEO : Catch up with the most important stories from around Europe and beyond - latest news, breaking news, World, Business, Entertainment, Politics, Culture, Travel.",
+            "url": "https://www.euronews.com/video/2023/04/29/latest-news-bulletin-april-29th-morning",
+            "urlToImage": "https://static.euronews.com/articles/stories/07/56/85/00/1000x563_screenshot_1200_15_7568500.jpg",
+            "publishedAt": "2023-04-29T05:00:02Z",
+            "content": "Catch up with the most important stories from around Europe and beyond - latest news, breaking news, World, Business, Entertainment, Politics, Culture, Travel.\r\n...More"
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": null,
+            "title": "Dutchman who fathered over 500 children around world ordered to stop donating sperm amid incest fears - CNN",
+            "description": "<ol><li>Dutchman who fathered over 500 children around world ordered to stop donating sperm amid incest fears  CNN\r\n</li><li>Sperm donor who fathered 550 children ordered to stop  BBC\r\n</li><li>Father of hundreds banned from donating sperm  Reuters\r\n</li><li>…",
+            "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiYmh0dHBzOi8vd3d3LmNubi5jb20vMjAyMy8wNC8yOC93b3JsZC9kdXRjaC1mYXRoZXItc3Blcm0tZG9ub3ItY2hpbGRyZW4tc2NhbmRhbC1pbnRsLWhuay9pbmRleC5odG1s0gFmaHR0cHM6Ly9hbXAuY25uLmNvbS9jbm4vMjAyMy8wNC8yOC93b3JsZC9kdXRjaC1mYXRoZXItc3Blcm0tZG9ub3ItY2hpbGRyZW4tc2NhbmRhbC1pbnRsLWhuay9pbmRleC5odG1s?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1",
+            "urlToImage": null,
+            "publishedAt": "2023-04-29T03:18:00Z",
+            "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
+        },
+        {
+            "source": {
+                "id": "cbc-news",
+                "name": "CBC News"
+            },
+            "author": "Jackson Weaver",
+            "title": "The Canadian behind The Flash explains what it takes to design a blockbuster",
+            "description": "There’s an Oscar-winning Canadian behind a major new super hero movie. Much of the news coverage for DC's The Flash has centred on controversial actor Ezra Miller, but the film’s world was created by Toronto-based production designer Paul Austerberry.",
+            "url": "https://www.cbc.ca/news/entertainment/paul-austerberry-the-flash-movie-1.6826721",
+            "urlToImage": "https://i.cbc.ca/1.6826727.1682723233!/fileImage/httpImage/image.jpg_gen/derivatives/16x9_620/paul-austerberry.jpg",
+            "publishedAt": "2023-04-29T08:00:00Z",
+            "content": "It hasn't been an easy journey for The Flash. The movie has been hampered by a floundering, then rebooted DC expanded cinematic universe that lags far behind Marvel's, a heavy schedule of reshoots an… [+4803 chars]"
+        },
+        {
+            "source": {
+                "id": "cbs-news",
+                "name": "CBS News"
+            },
+            "author": "CBS News",
+            "title": "How King Charles' coronation will differ from Queen Elizabeth's",
+            "description": "The world will watch the historic coronation of Britain's King Charles III next weekend. CBS News royal contributor Amanda Foreman joins with a look ahead.",
+            "url": "https://www.cbsnews.com/video/how-king-charles-coronation-will-differ-from-queen-elizabeths/",
+            "urlToImage": "https://assets3.cbsnewsstatic.com/hub/i/r/2023/04/29/449840a3-5b26-4ce1-9051-af7bd455a91b/thumbnail/1200x630/ac59f0df488eb1c103d1776b5b87f401/cbsn-fusion-how-king-charles-coronation-will-differ-from-queen-elizabeths-thumbnail-1925690-640x360.jpg",
+            "publishedAt": "2023-04-29T00:07:32Z",
+            "content": "Watch CBS News\r\nCopyright ©2023 CBS Interactive Inc. All rights reserved.\r\nGet browser notifications for breaking news, live events, and exclusive reporting.\r\nNot NowTurn On"
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": null,
+            "title": "Sperm donor who fathered at least 550 kids banned by Dutch court - Al Jazeera English",
+            "description": "<ol><li>Sperm donor who fathered at least 550 kids banned by Dutch court  Al Jazeera English\r\n</li><li>Dutchman who fathered over 500 children around world ordered to stop donating sperm amid incest fears  CNN\r\n</li><li>Sperm donor who fathered 550 children o…",
+            "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiaWh0dHBzOi8vd3d3LmFsamF6ZWVyYS5jb20vbmV3cy8yMDIzLzQvMjkvc3Blcm0tZG9ub3Itd2hvLWZhdGhlcmVkLWF0LWxlYXN0LTU1MC1raWRzLWJhbm5lZC1ieS1kdXRjaC1jb3VydNIBbWh0dHBzOi8vd3d3LmFsamF6ZWVyYS5jb20vYW1wL25ld3MvMjAyMy80LzI5L3NwZXJtLWRvbm9yLXdoby1mYXRoZXJlZC1hdC1sZWFzdC01NTAta2lkcy1iYW5uZWQtYnktZHV0Y2gtY291cnQ?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1",
+            "urlToImage": null,
+            "publishedAt": "2023-04-29T07:14:02Z",
+            "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": null,
+            "title": "JAPAN v UNITED STATES - Gold - World Mixed Doubles Curling Championship 2023 - World Curling TV",
+            "description": "<ol><li>JAPAN v UNITED STATES - Gold - World Mixed Doubles Curling Championship 2023  World Curling TV\r\n</li><li>Jones, Laing stumble in world mixed doubles semis  Winnipeg Free Press\r\n</li><li>US and Japan reach World Mixed Doubles Curling Championship final…",
+            "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CCAiCzV0MUtBTVdYaXVnmAEB?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1",
+            "urlToImage": null,
+            "publishedAt": "2023-04-29T08:16:24Z",
+            "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": null,
+            "title": "Norway win World Mixed Doubles bronze medals - worldcurling.org",
+            "description": "<ol><li>Norway win World Mixed Doubles bronze medals  worldcurling.org\r\n</li><li>Jones, Laing stumble in world mixed doubles semis  Winnipeg Free Press\r\n</li><li>Canada loses to Norway to finish fourth in world mixed doubles curling championship  TSN\r\n</li><l…",
+            "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMiMmh0dHBzOi8vd29ybGRjdXJsaW5nLm9yZy8yMDIzLzA0L3dtZGNjMjAyMy1icm9uemUv0gEA?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1",
+            "urlToImage": null,
+            "publishedAt": "2023-04-29T03:11:43Z",
+            "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "Biztoc.com"
+            },
+            "author": "wsj.com",
+            "title": "What’s News: World-Wide",
+            "description": "None JPMorgan, PNC Bidding for First Republic as Part of FDIC Takeover • None Fed Says It Failed to Act on Problems That Led to Silicon Valley Bank Collapse #jpmorgan #pncbidding #firstrepublic #nonefed #siliconvalleybank",
+            "url": "https://biztoc.com/x/40421981202a0107",
+            "urlToImage": "https://c.biztoc.com/186/og.png",
+            "publishedAt": "2023-04-29T03:42:05Z",
+            "content": "None JPMorgan, PNC Bidding for First Republic as Part of FDIC TakeoverNone Fed Says It Failed to Act on Problems That Led to Silicon Valley Bank Collapse \r\n#jpmorgan#pncbidding#firstrepublic#nonefed#… [+62 chars]"
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": null,
+            "title": "UAE’s Sultan Al Neyadi makes history as first Arab astronaut to walk in space - The Indian Express",
+            "description": "<ol><li>UAE’s Sultan Al Neyadi makes history as first Arab astronaut to walk in space  The Indian Express\r\n</li><li>Spacewalk with NASA Astronaut Steve Bowen and UAE Astronaut Sultan Alneyadi (April 28)  NASA\r\n</li><li>UAE's Sultan Al-Neyadi Becomes 1st Arab …",
+            "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMibmh0dHBzOi8vaW5kaWFuZXhwcmVzcy5jb20vYXJ0aWNsZS90ZWNobm9sb2d5L3NjaWVuY2UvdWFlLXN1bHRhbi1hbC1uZXlhZGktaW50ZXJuYXRpb25hbC1zcGFjZS1zdGF0aW9uLTg1ODIzOTgv0gFzaHR0cHM6Ly9pbmRpYW5leHByZXNzLmNvbS9hcnRpY2xlL3RlY2hub2xvZ3kvc2NpZW5jZS91YWUtc3VsdGFuLWFsLW5leWFkaS1pbnRlcm5hdGlvbmFsLXNwYWNlLXN0YXRpb24tODU4MjM5OC9saXRlLw?oc%3D5%26hl%3Den-CA%26gl%3DCA%26ceid%3DCA:en&gl=FR&hl=en-CA&cm=2&pc=n&src=1",
+            "urlToImage": null,
+            "publishedAt": "2023-04-29T06:23:56Z",
+            "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": null,
+            "title": "EXCLUSIVE| Hrithik Roshan on meeting 8 dance influencers on International Dance Day: I have to grow with them now! - Hindustan Times",
+            "description": "<ol><li>EXCLUSIVE| Hrithik Roshan on meeting 8 dance influencers on International Dance Day: I have to grow with them now!  Hindustan Times\r\n</li><li>International Dance Day: How Mumbai's Dancers Find Their Space  midday india\r\n</li><li>World Dance Day 2023 o…",
+            "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMi9wFodHRwczovL3d3dy5oaW5kdXN0YW50aW1lcy5jb20vZW50ZXJ0YWlubWVudC9ib2xseXdvb2QvaHJpdGhpay1yb3NoYW4tbWVudG9ycy15b3VuZy1kYW5jZXJzLW9uLWludGVybmF0aW9uYWwtZGFuY2UtZGF5LXBsYW5zLXRvLXN0YXJ0LXRha2luZy1kYW5jZS1jbGFzc2VzLWhpbXNlbGYtaHJpdGhpa3Jvc2hhbi1pbnRlcm5hdGlvbmFsZGFuY2VkYXktZGFuY2VtZW50b3ItYm9sbHl3b29kZGFuY2VyLTEwMTY4Mjc0MTY4NzE4My5odG1s0gH7AWh0dHBzOi8vd3d3LmhpbmR1c3RhbnRpbWVzLmNvbS9lbnRlcnRhaW5tZW50L2JvbGx5d29vZC9ocml0aGlrLXJvc2hhbi1tZW50b3JzLXlvdW5nLWRhbmNlcnMtb24taW50ZXJuYXRpb25hbC1kYW5jZS1kYXktcGxhbnMtdG8tc3RhcnQtdGFraW5nLWRhbmNlLWNsYXNzZXMtaGltc2VsZi1ocml0aGlrcm9zaGFuLWludGVybmF0aW9uYWxkYW5jZWRheS1kYW5jZW1lbnRvci1ib2xseXdvb2RkYW5jZXItMTAxNjgyNzQxNjg3MTgzLWFtcC5odG1s?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1",
+            "urlToImage": null,
+            "publishedAt": "2023-04-29T04:14:46Z",
+            "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
+        },
+        {
+            "source": {
+                "id": "google-news",
+                "name": "Google News"
+            },
+            "author": null,
+            "title": "World Chess Championship 2023 Game 14 Live: Ian Nepomniachtchi and Ding Liren face off in blockbuster final round - The Indian Express",
+            "description": "<ol><li>World Chess Championship 2023 Game 14 Live: Ian Nepomniachtchi and Ding Liren face off in blockbuster final round  The Indian Express\r\n</li><li>WINNER TAKES ALL: Ding and Nepomniachtchi Are BOTH One Win Away From A FIDE World Champion's Title!  Chess.…",
+            "url": "https://consent.google.com/ml?continue=https://news.google.com/rss/articles/CBMigwFodHRwczovL2luZGlhbmV4cHJlc3MuY29tL2FydGljbGUvc3BvcnRzL2NoZXNzL3dvcmxkLWNoZXNzLWNoYW1waW9uc2hpcC0yMDIzLWdhbWUtMTQtbGl2ZS1pYW4tbmVwb21uaWFjaHRjaGktdnMtZGluZy1saXJlbi04NTgyNTE4L9IBiAFodHRwczovL2luZGlhbmV4cHJlc3MuY29tL2FydGljbGUvc3BvcnRzL2NoZXNzL3dvcmxkLWNoZXNzLWNoYW1waW9uc2hpcC0yMDIzLWdhbWUtMTQtbGl2ZS1pYW4tbmVwb21uaWFjaHRjaGktdnMtZGluZy1saXJlbi04NTgyNTE4L2xpdGUv?oc%3D5&gl=FR&hl=en-US&cm=2&pc=n&src=1",
+            "urlToImage": null,
+            "publishedAt": "2023-04-29T09:19:30Z",
+            "content": "We use cookies and data to<ul><li>Deliver and maintain Google services</li><li>Track outages and protect against spam, fraud, and abuse</li><li>Measure audience engagement and site statistics to unde… [+1131 chars]"
+        }
+    ]
+}

@@ -4,14 +4,14 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import NewsCardComponent from './NewsCard';
 import FormComponent from './Form';
-import { getEverithing } from '../services/apiServices';
+import { getEverithing, getEverithingDummy } from '../services/apiServices';
 import { useDispatch, useSelector } from 'react-redux';
 import { setErrorMessage, setSearchParams, setTotalResults } from '../services/stateService';
 import { Link, useParams } from 'react-router-dom';
 import './News.scss';
 
 
-function NewsGrourComponent() {
+function BodyComponent() {
     const [show, setShow] = useState(false);
     const [articles, setArticles] = useState([]);
 
@@ -48,6 +48,9 @@ function NewsGrourComponent() {
                 dispatch(setTotalResults(responseData.totalResults));
             } catch (error) {
                 dispatch(setErrorMessage(error.message));
+                const response = await getEverithingDummy();
+                const responseData = await response.json();
+                setArticles(responseData.articles);
             }
 
         })();
@@ -59,7 +62,7 @@ function NewsGrourComponent() {
             <Button variant="light" onClick={handleShow} className="mb-3 mt-0">
                 Search news
             </Button>
-            <Link to="/bitcoin">Bitcoin</Link>
+            <Link to="/News/bitcoin">Bitcoin</Link>
             <Row xs={1} md={2} lg={3} className="g-2">
                 {articles.map((article, idx) => (
                     <Col key={idx}>
@@ -80,4 +83,4 @@ function NewsGrourComponent() {
 
 
 
-export default NewsGrourComponent;
+export default BodyComponent;
