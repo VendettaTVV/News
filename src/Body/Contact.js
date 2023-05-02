@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import CardFoto from '../CardFoto.jpg';
 
-function ContantComponent() {
+function ContactComponent() {
     return (
         <>
             <Link to="/News/contact/school" className="btn btn-secondary stretched-link">School Contacts</Link>
@@ -28,4 +28,4 @@ function ContantComponent() {
     )
 };
 
-export default ContantComponent;
+export default ContactComponent;
