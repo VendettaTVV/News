@@ -34,7 +34,7 @@ function App() {
             <PaginationComponent />
           </>
         } />
-        <Route path="/News/contact/school" element={<ContactSchoolComponent />} />
+        <Route path="/News/school" element={<ContactSchoolComponent />} />
         <Route path="/News/contact" element={<ContactComponent />} />
       </Routes>
       <ErrorModalComponent />

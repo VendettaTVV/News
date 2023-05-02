@@ -1,5 +1,3 @@
-
-import { Link } from 'react-router-dom';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import CardFoto from '../CardFoto.jpg';
@@ -7,7 +5,6 @@ import CardFoto from '../CardFoto.jpg';
 function ContactComponent() {
     return (
         <>
-            <Link to="/News/contact/school" className="btn btn-secondary stretched-link">School Contacts</Link>
             <Card className="position-absolute top-50 start-50 translate-middle mt-1" style={{ width: '25rem' }}>
                 <Card.Img variant="top" src={CardFoto} />
                 <Card.Body>

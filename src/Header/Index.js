@@ -2,7 +2,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 import logo from '../logo.svg';
 import { Link } from 'react-router-dom';
-import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function HeaderComponent() {
     return (
@@ -18,10 +18,12 @@ function HeaderComponent() {
                     />{' '}
                     News
                 </Link >
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Link to="/News/contact" className="nav-link">Contact</Link>
-                    </Nav>
+                <Navbar.Collapse id="basic-navbar-nav" className="mt-1 ">
+                    <NavDropdown title="Contacs" id="basic-nav-dropdown" className="">
+                        <Link to="/News/contact" className="nav-link te text-center">My contact</Link>
+                        <NavDropdown.Divider />
+                        <Link to="/News/school" className="nav-link text-center">School Contacts</Link>
+                    </NavDropdown>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
