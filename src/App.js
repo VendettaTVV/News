@@ -16,26 +16,26 @@ function App() {
     <Container >
       <HeaderComponent />
       <Routes>
-        <Route path='/News' element={
+        <Route path="/News" element={
           <>
             <BodyComponent />
             <PaginationComponent />
           </>
         } />
-        <Route path='/News/:q' element={
+        <Route path="/News/:q" element={
           <>
             <BodyComponent />
             <PaginationComponent />
           </>
         } />
-         <Route path='/News/lang/:lang' element={
+        <Route path="/News/lang/:lang" element={
           <>
             <BodyComponent />
             <PaginationComponent />
           </>
         } />
         <Route path="/News/contact/school" element={<ContactSchoolComponent />} />
-        <Route path='/News/contact' element={<ContactComponent />} />
+        <Route path="/News/contact" element={<ContactComponent />} />
       </Routes>
       <ErrorModalComponent />
     </Container>

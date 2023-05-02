@@ -5,7 +5,7 @@ class ClassComponent extends React.Component {
         return (
             <div> ClassComponent </div>
         )
-}
+    }
 }
 
 export default ClassComponent;

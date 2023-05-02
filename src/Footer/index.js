@@ -12,7 +12,7 @@ function PaginationComponent() {
     const totalResults = useSelector((state) => state.totalResults);
     const pageSize = useSelector((state) => state.searchParams.pageSize);
 
-    const totalPages = Math.ceil(totalResults/pageSize);
+    const totalPages = Math.ceil(totalResults / pageSize);
 
     return (
         <Pagination className="mt-4 justify-content-center">

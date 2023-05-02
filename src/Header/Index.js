@@ -17,10 +17,10 @@ function HeaderComponent() {
                         className="d-inline-block align-top"
                     />{' '}
                     News
-                </Link > 
+                </Link >
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Link to="/News/contact" className='nav-link'>Contact</Link>
+                        <Link to="/News/contact" className="nav-link">Contact</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -3,7 +3,7 @@ import { useState } from 'react';
 const TestComponent = (props) => {
 
     const [index, setIndex] = useState(0);
-    
+
     console.log('Test component render');
     function handleClick(event) {
         console.log(event);
@@ -12,7 +12,7 @@ const TestComponent = (props) => {
     }
     function handleClickIndexMinus(event) {
         console.log(event);
-        setIndex(index -1 );
+        setIndex(index - 1);
 
     }
 
@@ -36,7 +36,7 @@ const ArrowComponent = (props) => {
 
     const array = [
         'Test 1',
-        'Test 2', 
+        'Test 2',
         'Test 3',
     ];
     console.log("arrow render");
@@ -47,11 +47,11 @@ const ArrowComponent = (props) => {
             <div>
                 <button onClick={() => setCount(count + 1)}>Add index</button>
             </div>
-            <TestComponent count={count} setCount={setCount}/>
+            <TestComponent count={count} setCount={setCount} />
 
             {array.map(a => {
-                return(<div key={a}>{a}</div>);
-            })} 
+                return (<div key={a}>{a}</div>);
+            })}
         </div>
     );
 };

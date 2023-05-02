@@ -5,11 +5,11 @@ import { setErrorMessage } from './services/stateService';
 
 function ErrorModalComponent() {
 
-const errorMessage = useSelector((state) => state.errorMessage);
-const dispatch = useDispatch();
-function handleClose() {
-    dispatch(setErrorMessage(null));
-}
+    const errorMessage = useSelector((state) => state.errorMessage);
+    const dispatch = useDispatch();
+    function handleClose() {
+        dispatch(setErrorMessage(null));
+    }
 
     return (
         <Modal show={!!errorMessage} onHide={handleClose}>

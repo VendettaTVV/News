@@ -25,7 +25,7 @@ function BodyComponent() {
     const searchParams = useSelector((state) => state.searchParams);
 
     useEffect(() => {
-        if(lang && searchParams.language !== lang) {
+        if (lang && searchParams.language !== lang) {
             dispatch(setSearchParams({
                 ...searchParams,
                 language: lang,

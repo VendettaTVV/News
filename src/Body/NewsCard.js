@@ -9,13 +9,13 @@ function NewsCardComponent({ article }) {
     return (
         <>
             <Card onClick={() => setShow(true)} className="h-100">
-                <Card.Img variant="top" src={article.urlToImage || noImage}/>
+                <Card.Img variant="top" src={article.urlToImage || noImage} />
                 <Card.Body>
                     <Card.Title>{article.title}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">{article.source.name}</Card.Subtitle>
-                    <Card.Text dangerouslySetInnerHTML={{ __html: article.description }}>  
+                    <Card.Text dangerouslySetInnerHTML={{ __html: article.description }}>
                     </Card.Text>
-                   
+
                     {article.author ? (
                         <blockquote className="blockquote mb-0">
                             <footer className="blockquote-footer">

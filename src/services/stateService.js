@@ -1,4 +1,4 @@
-import {configureStore, createAction, createReducer} from '@reduxjs/toolkit';
+import { configureStore, createAction, createReducer } from '@reduxjs/toolkit';
 import moment from 'moment';
 
 const pageSize = 12;
@@ -14,7 +14,7 @@ const initialState = {
         searchIn: "title,description",
         pageSize,
         page: 1,
-      }
+    }
 
 };
 
@@ -38,4 +38,4 @@ const reducer = createReducer(initialState, {
     },
 });
 
-export const store = configureStore({reducer});
+export const store = configureStore({ reducer });
