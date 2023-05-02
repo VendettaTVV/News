@@ -2,7 +2,7 @@
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Figure from 'react-bootstrap/Figure';
-import noImage from '../dummy-post-horisontal.jpg';
+import noImage from '../world-news-icon-vector.jpg';
 
 function NewsModalComponent({ show, setShow, article }) {
     const handleClose = () => setShow(false);
@@ -14,8 +14,8 @@ function NewsModalComponent({ show, setShow, article }) {
                     <Modal.Title>{article.title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <Figure>
-                        <Figure.Image
+                    <Figure className="d-flex justify-content-center">
+                        <Figure.Image 
                             alt="picture"
                             src={article.urlToImage || noImage}
                         />
