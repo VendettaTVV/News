@@ -62,7 +62,8 @@ function BodyComponent() {
             <Button variant="light" onClick={handleShow} className="mb-3 mt-0">
                 Search news
             </Button>
-            <Link to="/News/bitcoin">Bitcoin</Link>
+            <Link  className = "btn btn-outline-warning align-top ms-2"
+            to="/News/bitcoin">Bitcoin</Link>
             <Row xs={1} md={2} lg={3} className="g-2">
                 {articles.map((article, idx) => (
                     <Col key={idx}>
