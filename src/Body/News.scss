@@ -1,6 +1,6 @@
 $hoverBackgrounColor: #dbf8e25e;
 
-.card {
+#card {
     &:hover {
         background-color: $hoverBackgrounColor;
         cursor: pointer;
@@ -9,10 +9,10 @@ $hoverBackgrounColor: #dbf8e25e;
             text-decoration: underline;
         }
     }
+}
 
-    .card-img-top {
-        width: 100%;
-        height: 25vh;
-        object-fit: fill;
-    }
+#card-img {
+    width: 100%;
+    height: 25vh;
+    object-fit: fill;
 }

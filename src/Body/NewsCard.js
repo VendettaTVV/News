@@ -8,8 +8,8 @@ function NewsCardComponent({ article }) {
     const [show, setShow] = useState(false);
     return (
         <>
-            <Card onClick={() => setShow(true)} className="h-100">
-                <Card.Img variant="top" src={article.urlToImage || noImage} />
+            <Card id="card" onClick={() => setShow(true)} className="h-100">
+                <Card.Img id="card-img" variant="top" src={article.urlToImage || noImage} />
                 <Card.Body>
                     <Card.Title>{article.title}</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">{article.source.name}</Card.Subtitle>
